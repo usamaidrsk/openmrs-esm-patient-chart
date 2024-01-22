@@ -18,13 +18,21 @@
   .patientName {
     color: $ui-01;
   }
-  
+
   .demographics, .row, .identifierTag, .identifier, .contactDetails .heading {
     color: $ui-02;
   }
-  
+
   .toggleContactDetailsButton, .toggleContactDetailsButton > svg, .actionsButtonText {
     color: colors.$blue-40;
+    background-color: red;
+  }
+
+  .toggleContactDetailsButton {
+    &:focus {
+      box-shadow: none !important;
+      border: none !important;
+    }
   }
 
   &:focus, &:hover {
